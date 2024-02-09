@@ -1,0 +1,8 @@
+- JWT stands for Json Web Token , it is a Json object used to transfer data securely from one party to another party.
+- There are two modes of transfering data i.e, seriealized and deseriealized.
+- Seriealized(header + payload + signature) , Deseriealized(header + payload).
+- a header consists of two parameters i.e, 'type' and 'algo' where 'type' is the type of object for eg: JWT and 'algo' is alogrithm used for encryption for eg: HS256.
+- payload consists of the data/details of users like 'userid','username' etc. payload should not include any confidential data as it is open to users.
+- signature is the third part of JWT, it is the authentication provider
+- header and payload are hashed with a [.] similary signature at the end. 
+	[header].[payload].[signature]
